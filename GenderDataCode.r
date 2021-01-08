@@ -34,7 +34,7 @@ names(GenderDF)[1] <- "First"
 GenderedData <- inner_join(NamesDF, GenderDF, by = "First")
 names(GenderedData)[1] <- "County"
 ##Anonymize
-CleanGenderData <- read_csv("C:/Users/Jensen/Documents/_Graduate/Multimedia Journalism/GenderedData.csv")
+CleanGenderData <- read_csv("GenderedData.csv")
 CleanGenderData <- CleanGenderData %>% 
   subset(select = -c(defname, Last, First, Middle, YearMin, YearMax, year_min, year_max))
 
